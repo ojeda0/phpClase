@@ -1,0 +1,10 @@
+.filaDatos {
+    width: 100%;
+    display: block;
+    float: left;
+}
+
+.columnaDatos {
+    width: 25%;
+    float: left;
+}
