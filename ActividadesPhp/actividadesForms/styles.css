@@ -1,0 +1,15 @@
+table {
+    text-align: center;
+}
+
+th, td {
+    padding: 10px;
+}
+
+.verde {
+    background-color: lightgreen;
+}
+
+.rojo {
+    background-color: lightcoral;
+}
