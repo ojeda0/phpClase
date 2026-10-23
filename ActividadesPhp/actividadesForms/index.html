@@ -3,26 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividad 7</title>
+    <title>Actividad 8</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Sistema de Registro y Evaluación</h1>
-    <form action="back.php" method="POST">
-        <label for="nombre">Nombre del alumno:</label>
-        <input type="text" id="nombre" name="nombre" required>
+    <h1>Ecuación de segundo grado</h1>
+    <form action="back.php" method="GET">
+        <label for="parametro-a">a:</label>
+        <input type="number" id="parametro-a" name="parametro-a" required>
         <br><br>
 
-        <label for="matematicas">Nota de matemáticas:</label>
-        <input type="number" id="matematicas" name="matematicas" step="0.01" min="0" max="10" required>
+        <label for="parametro-b">b:</label>
+        <input type="number" id="parametro-b" name="parametro-b" required>
         <br><br>
 
-        <label for="lengua">Nota de lengua:</label>
-        <input type="number" id="lengua" name="lengua" step="0.01" min="0" max="10" required>
-        <br><br>
-
-        <label for="ciencias">Nota de ciencias:</label>
-        <input type="number" id="ciencias" name="ciencias" step="0.01" min="0" max="10" required>
+        <label for="parametro-c">c:</label>
+        <input type="number" id="parametro-c" name="parametro-c" required>
         <br><br>
 
         <input type="submit" value="Enviar">
