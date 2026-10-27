@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulacro 2</title>
+</head>
+<body>
+    <h1>Formulario de películas</h1>
+    <p>Introduce <strong>4 películas</strong> con su título, año y duración (min). </p>
+
+    <br>
+    
+    <form action="clasificar.php" method="POST">
+        <table border="1" cellpadding="5">
+            <thead>
+                <th>Título</th>
+                <th>Año</th>
+                <th>Duración (min)</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><input type="text" name="titulo[]" required></td>
+                    <td><input type="number" name="anyo[]" min="1800" max="2030" required></td>
+                    <td><input type="number" name="duracion[]" min="1" max="400" required></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" name="titulo[]" required></td>
+                    <td><input type="number" name="anyo[]" min="1800" max="2030" required></td>
+                    <td><input type="number" name="duracion[]" min="1" max="400" required></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" name="titulo[]" required></td>
+                    <td><input type="number" name="anyo[]" min="1800" max="2030" required></td>
+                    <td><input type="number" name="duracion[]" min="1" max="400" required></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" name="titulo[]" required></td>
+                    <td><input type="number" name="anyo[]" min="1800" max="2030" required></td>
+                    <td><input type="number" name="duracion[]" min="1" max="400" required></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <button type="submit">Clasificar películas</button>
+    </form>
+    
+</body>
+</html>

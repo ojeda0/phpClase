@@ -10,22 +10,30 @@
 
         define("IVA", 0.21);
         $producto = "Monitor";
-        $precioUnit = 50.00;
-        $uds = 2;
-        $descuento = 0.80;
+        $precioUnit = 49.90;
+        $uds = 3;
+        $descuento = 0.90;
         $moneda = "€";
 
         $importeBase = $precioUnit * $uds;
         $aplicarIVA = $importeBase * IVA;
         $importeConIVA = $importeBase + $aplicarIVA;
-        $importeFinal = $importeConIVA - ($importeConIVA * $descuento);
+
+        $descuentoFinal = $importeConIVA - ($importeConIVA * $descuento);
 
         function linea($etiqueta, $valor){
             global $moneda;
             $frase = "<p><strong>" . $etiqueta . "</strong>" . number_format($valor, 2) . $moneda . "</p>";
             return $frase;
         }
+        
+        echo "<h1>Resumen de pedido: " . $producto . "</h1>";
         echo (linea("Importe base: ", $importeBase));
+        echo (linea("IVA (21%): ", $aplicarIVA));
+        echo (linea("Importe con IVA: ", $importeConIVA));
+        echo (linea("Descuento (10%): ", $descuentoFinal));
+        echo (linea("Total a pagar: ", $importeConIVA - $descuentoFinal));
+
 
     ?>
 </body>
