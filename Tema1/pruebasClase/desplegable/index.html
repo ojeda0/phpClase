@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Campeones main del Mario</h1>
+    <form action="procesar.php" method="POST">
+        <label for="valores">Campeones: </label>
+        <select name="valores[]" id="valores" multiple>
+            <option>Garen</option>
+            <option>Mordekaiser</option>
+            <option>Dr. Mundo</option>
+            <option>Soraka</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+    </form>
+</body>
+</html>

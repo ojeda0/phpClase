@@ -31,7 +31,7 @@
         echo (linea("Importe base: ", $importeBase));
         echo (linea("IVA (21%): ", $aplicarIVA));
         echo (linea("Importe con IVA: ", $importeConIVA));
-        echo (linea("Descuento (10%): ", $descuentoFinal));
+        echo (linea("Descuento (10%): ", $importeConIVA * $descuento));
         echo (linea("Total a pagar: ", $importeConIVA - $descuentoFinal));
 
 

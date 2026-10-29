@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej 2</title>
+</head>
+<body>
+	<h1>Formulario: Lista de películas</h1>
+	<p>Introduce al menos <strong>4 películas </strong>con título, año y duración (min).</p>
+	
+	<!-- Formulario para recoger datos -->
+	<form action="clasificar.php" method="POST">
+	
+		<table border="1" cellpadding="10" style="text-align: center;">
+			<thead>
+				<th>Título</th>
+				<th>Año</th>
+				<th>Duración (min)</th>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td><input type="text" name="titulo[]" id="titulo" placeholder="Ej: Titanic" required></td>
+					<td><input type="number" name="anyo[]" id="anyo" placeholder="Ej: 2001" min="1800" max="2026" required></td>
+					<td><input type="number" name="duracion[]" id="duracion" placeholder="Ej: 120" min="1" max="500" required></td>
+				</tr>
+				
+				<tr>
+					<td><input type="text" name="titulo[]" id="titulo" placeholder="Ej: Titanic" required></td>
+					<td><input type="number" name="anyo[]" id="anyo" placeholder="Ej: 2001" min="1800" max="2026" required></td>
+					<td><input type="number" name="duracion[]" id="duracion" placeholder="Ej: 120" min="1" max="500" required></td>
+				</tr>
+				
+				<tr>
+					<td><input type="text" name="titulo[]" id="titulo" placeholder="Ej: Titanic" required></td>
+					<td><input type="number" name="anyo[]" id="anyo" placeholder="Ej: 2001" min="1800" max="2026" required></td>
+					<td><input type="number" name="duracion[]" id="duracion" placeholder="Ej: 120" min="1" max="500" required></td>
+				</tr>
+				
+				<tr>
+					<td><input type="text" name="titulo[]" id="titulo" placeholder="Ej: Titanic" required></td>
+					<td><input type="number" name="anyo[]" id="anyo" placeholder="Ej: 2001" min="1800" max="2026" required></td>
+					<td><input type="number" name="duracion[]" id="duracion" placeholder="Ej: 120" min="1" max="500" required></td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<br>
+		
+		<!-- Botones de enviar y resetear -->
+		<button type="submit">Clasificar</button>
+		<button type="reset">Limpiar</button>
+	</form>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario: Lista de películas</h1>
+    <p>Introduce al menos <strong>4 películas</strong> con título, año y duración (min).</p>
+    <form action="clasificar.php" method="POST">
+        <table border="1" cellpadding="10" style="text-align: center;">
+            <thead>
+                <th>Título</th>
+                <th>Año de estreno</th>
+                <th>Duración (min)</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><input type="text" name="titulo[]" id="titulo" placeholder="Ej: Interstellar" required></td>
+                    <td><input type="number" name="anyo[]" id="anyo" min="1800" max="2026" placeholder="Ej: 2002" required></td>
+                    <td><input type="number" name="duracion[]" id="duracion" min="1" max="600" placeholder="Ej: 60" required></td>
+                </tr>
+                    
+                <tr>
+                    <td><input type="text" name="titulo[]" id="titulo" placeholder="Ej: Interstellar" required></td>
+                    <td><input type="number" name="anyo[]" id="anyo" min="1800" max="2026" placeholder="Ej: 2002" required></td>
+                    <td><input type="number" name="duracion[]" id="duracion" min="1" max="600" placeholder="Ej: 60" required></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" name="titulo[]" id="titulo" placeholder="Ej: Interstellar" required></td>
+                    <td><input type="number" name="anyo[]" id="anyo" min="1800" max="2026" placeholder="Ej: 2002" required></td>
+                    <td><input type="number" name="duracion[]" id="duracion" min="1" max="600" placeholder="Ej: 60" required></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" name="titulo[]" id="titulo" placeholder="Ej: Interstellar" required></td>
+                    <td><input type="number" name="anyo[]" id="anyo" min="1800" max="2026" placeholder="Ej: 2002" required></td>
+                    <td><input type="number" name="duracion[]" id="duracion" min="1" max="600" placeholder="Ej: 60" required></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <button type="submit">Clasificar</button>
+    </form>
+</body>
+</html>
